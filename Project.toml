@@ -1,0 +1,8 @@
+name = "EssentialBiodiversityVariables"
+uuid = "b00fac9b-ff25-4c2a-a4be-85c783aa36a7"
+authors = ["Timothée Poisot <timothee.poisot@umontreal.ca>"]
+version = "0.0.1"
+
+[deps]
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
