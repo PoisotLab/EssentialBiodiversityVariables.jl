@@ -39,11 +39,12 @@ also [start a discussion]. Please read the [Code of Conduct][CoC] and the
 **How do I install the package**? The latest tagged released can be installed
 just like any Julia package: `]add EssentialBiodiversityVariables`.
 
-**Why are there no code examples in this README**? In short, because keeping the
-code in the README up to date with what the package actually does is tedious;
-the documentation is built around many case studies, with richer text, and with
-a more narrative style. This is where you will find the code examples and the
-figures you are looking for!
+**How to use the package**?
+
+~~~julia
+import EssentialBiodiversityVariables as EBV
+EBV.query(spatialExtent=EBV.Global) # Get the global EBVs
+~~~
 
 ---
 
