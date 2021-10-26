@@ -15,6 +15,8 @@ function query(; kwargs...)
         if String(param) in keys(_GEOBON_API_TYPES)
             @assert typeof(arg) <: _GEOBON_API_TYPES[String(param)]
             push!(query_set, String(param) => _spaceout(arg))
+        else
+            throw(ArgumentError("$(String(param)) must be supported by the EBV API -- see EssentialBiodiversityVariables.queryparameters() for a list of keywords"))
         end
     end
     query_string = map(p -> "$(p.first)=$(p.second)", query_set)
